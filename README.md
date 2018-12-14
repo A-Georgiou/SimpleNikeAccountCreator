@@ -23,7 +23,20 @@ npm install forever
 
 
 These are required for the program to work correctly.
+
+
+--FOR UK USERS--
+
 Now go into bot.js and at the top of the program just replace the variables with your own from getsmscode.com and for the Nike account information you would like to enter.
+
+TO RUN THE PROGRAM: in terminal type "forever bot.js" this will run the program and upon completion will restart it and run it again and again forever until you press "ctrl + C" to end the program, it does not take up much processor power so you can just run it in the background.
+
+--FOR US USERS--
+
+Now go into botUS.js and replace the variables at the top with your getsmscode account and some details you would like for the generated accounts to have.
+
+TO RUN THE PROGRAM: in terminal type "forever botUS.js" this will run the program and upon completion will restart it and run it again and again forever until you press "ctrl + C" to end the program, it does not take up much processor power so you can just run it in the background.
+ 
 
 Hopefully it works, it is just a very simple application without much complexity.
 
