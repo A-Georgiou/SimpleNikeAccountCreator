@@ -8,10 +8,15 @@ this bot will automate creating nike accounts for you and will also also verify 
 1. Download the project.
 2. In terminal navigate to the projects directory
 3. Run the following commands with npm installed
+
 npm install puppeteer
+
 npm install request
+
 npm install fs
+
 npm install forever
+
 
 4. Now you will need to setup a getsmscode.com account for the phone verification which is required for Nike.
 5. Once you have created an account you can find the token on the user information page.
