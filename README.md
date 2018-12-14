@@ -21,9 +21,12 @@ npm install forever
 4. Now you will need to setup a getsmscode.com account for the phone verification which is required for Nike.
 5. Once you have created an account you can find the token on the user information page.
 
+
 These are required for the program to work correctly.
 Now go into bot.js and at the top of the program just replace the variables with your own from getsmscode.com and for the Nike account information you would like to enter.
 
 Hopefully it works, it is just a very simple application without much complexity.
+
 Enjoy.
+
 -Andrew
