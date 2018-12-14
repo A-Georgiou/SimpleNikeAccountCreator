@@ -1,0 +1,19 @@
+{
+  "name": "nike-bot",
+  "version": "1.0.0",
+  "description": "Simple Nike Account Creator",
+  "main": "bot.js",
+  "scripts": {
+    "start": "forever Bot.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "getsmscode": "^1.0.4",
+    "node-fetch": "^2.3.0",
+    "puppeteer": "^1.11.0",
+    "request": "^2.88.0"
+  }
+}
