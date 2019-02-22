@@ -2,12 +2,15 @@ const puppeteer = require('puppeteer');
 const request = require('request');
 const fs = require('fs');
 
-var emailVal = 'chippyfriedrice' + '.' + (Math.floor((Math.random() * 9000) + 1000)).toString() + '@gmail.com';
-var smsEmail = 'chippyfriedrice@gmail.com';
-var token = 'f0f65d3739c9f6e5fcf698e7f85e5c02';
-var passwordVal = 'Msn12345';
-var fNameVal = 'Andrew';
-var sNameVal = 'Georgiou';
+var emailVal = 'ENTER EMAIL NAME e.g MyEmail98' + '.' + (Math.floor((Math.random() * 9000) + 1000)).toString() + 'ENTER EMAIL SERVICE e.g @gmail.com';
+var smsEmail = 'ENTER GETSMSCODE.COM EMAIL ADDRESS';
+var token = 'ENTER GETSMSCODE API TOKEN';
+var passwordVal = 'ENTER PASSWORD FOR NIKE ACCOUNTS';
+var fNameVal = 'ENTER FIRST NAME';
+var sNameVal = 'ENTER SURNAME';
+var proxyUrl = ''; //if proxy exists enter it in format IP:PORT, if not leave blank
+var proxyUser = ''; //If proxy username/pass exists insert it here if not leave both variables blank
+var proxyPass = '';
 var info;
 var themessage;
 var phoneNum;
@@ -74,8 +77,26 @@ console.log("The Bot is starting...");
 
 (async () => {
   
-    const browser = await puppeteer.launch({headless: false, slowMo: 150});
-    const page = await browser.newPage();
+    var page;
+    var browser;
+
+	if(proxyUrl != ''){
+		browser = await puppeteer.launch({
+        args: ['--proxy-server='+ proxyUrl], headless: false, slowMo: 150,
+    });
+    page = await browser.newPage();
+
+    if(proxyUser != '' &&proxyPass != ''){
+    	console.log("authenticating proxy user/pass");
+	    await page.authenticate({ 
+	      username: proxyUser, 
+	      password: proxyPass 
+	  	});
+	}
+	}else{
+		browser = await puppeteer.launch({headless: false, slowMo: 150});
+		page = await browser.newPage();
+	}
 
     await page.setViewport({ width: 1200, height: 800 })
     await page.goto('https://www.nike.com/cn/launch/');
