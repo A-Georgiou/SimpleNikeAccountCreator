@@ -1,7 +1,6 @@
 const puppeteer = require('puppeteer');
 const request = require('request');
 const fs = require('fs');
-const proxyChain = require('proxy-chain');
 
 var emailVal = 'ENTER EMAIL NAME e.g MyEmail98' + '.' + (Math.floor((Math.random() * 9000) + 1000)).toString() + 'ENTER EMAIL SERVICE e.g @gmail.com';
 var smsEmail = 'ENTER GETSMSCODE.COM EMAIL ADDRESS';
