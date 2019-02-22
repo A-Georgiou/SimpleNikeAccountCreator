@@ -1,4 +1,4 @@
-# SimpleNikeAccountCreator
+# Simple Nike Account Creator
 A simple nike account creator and verifier I made using puppeteer and request in node js,
 this bot will automate creating nike accounts for you and will also also verify the mobile number so the accounts can be used to purchase shoes on Nike.com
 
