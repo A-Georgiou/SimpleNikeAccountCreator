@@ -50,7 +50,7 @@ function callback(error, response, body) {
 
 //values for phone number request
 const options = {
-  url: 'http://www.getsmscode.com/usdo.php?action=getmobile&username='+smsEmail+'&token='+token+'&pid=462',
+  url: 'http://www.getsmscode.com/usdo.php?action=getmobile&username='+smsEmail+'&token='+token+'&pid=628',
   headers: {'User-Agent': 'request'}
 };
 
@@ -160,7 +160,7 @@ console.log("The Bot is starting...");
       console.log("Phone Number: " + phoneNum);
 
     const values = {
-         url: 'http://www.getsmscode.com/usdo.php?action=getsms&username='+smsEmail+'&token='+token+'&pid=462&mobile=1'+phoneNum,
+         url: 'http://www.getsmscode.com/usdo.php?action=getsms&username='+smsEmail+'&token='+token+'&pid=628&mobile=1'+phoneNum,
          headers: {'User-Agent': 'request'}
       };
 
