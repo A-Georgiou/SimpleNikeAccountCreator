@@ -8,6 +8,7 @@ var token = 'ENTER GETSMSCODE API TOKEN';
 var passwordVal = 'ENTER PASSWORD FOR NIKE ACCOUNTS';
 var fNameVal = 'ENTER FIRST NAME';
 var sNameVal = 'ENTER SURNAME';
+var bDayVal = '01/05/19'+(Math.floor((Math.random() * (99-55)) + 55)).toString();
 var proxyUrl = ''; //if proxy exists enter it in format IP:PORT, if not leave blank
 var proxyUser = ''; //If proxy username/pass exists insert it here if not leave both variables blank
 var proxyPass = '';
@@ -114,7 +115,7 @@ console.log("The Bot is starting...");
 
   await page.type(sName, sNameVal);
 
-    await page.type(dob, '01/05/19'+(Math.floor((Math.random() * (99-55)) + 55)).toString());
+    await page.type(dob, bDayVal);
 
     await page.click(gender);
 
