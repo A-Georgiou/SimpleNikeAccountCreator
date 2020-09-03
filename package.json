@@ -14,7 +14,7 @@
     "fs": "0.0.1-security",
     "getsmscode": "^1.0.4",
     "node-fetch": "^2.3.0",
-    "puppeteer": "^1.11.0",
+    "puppeteer": "^1.13.0",
     "request": "^2.88.0"
   }
 }
